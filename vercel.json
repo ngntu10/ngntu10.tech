@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/stats/:match*",
-      "destination": "https://analytics.leohuynh.dev/:match*"
+      "destination": "https://analytics.ngntu10.tech/:match*"
     }
   ]
 }
