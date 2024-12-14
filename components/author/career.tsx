@@ -19,15 +19,20 @@ const EXPERIENCES = [
       return (
         <ul className="[&>li]:my-2 [&>li]:pl-0">
           <li>
-            Developed microservices architectures for backend systems for{' '}
+            Developed <strong>microservices architectures</strong> for backend systems for{' '}
             <a target="_blank" rel="noopener noreferrer" href="https://practyce.com">
               PRACTYCE
             </a>{' '}
             , ensuring scalability, modularity, and efficient resource utilization
           </li>
           <li>
-            Built responsive interfaces with Angular, focusing on reusable components, API
-            integration, and performance optimization for a seamless user experience
+            Built and revamped responsive interfaces with <strong>Angular</strong>, focusing on
+            reusable components, API integration for a seamless user experience
+          </li>
+          <li>
+            Built and <strong>optimized payment gateway integrations</strong> to handle{' '}
+            <strong>secure transactions</strong> and <strong>real-time data synchronization</strong>{' '}
+            with <strong>external banking systems</strong>
           </li>
         </ul>
       )
@@ -37,8 +42,8 @@ const EXPERIENCES = [
     org: 'University of Information Technology',
     url: 'https://www.uit.edu.vn/',
     logo: '/static/images/uit-logo.jpg',
-    start: 'Sep 2013',
-    end: 'Feb 2019',
+    start: 'Sep 2022',
+    end: 'Jul 2026(Expected)',
     title: 'Student',
     icon: 'man-student',
     event: 'career-uit',
