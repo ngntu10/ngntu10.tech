@@ -7,187 +7,61 @@ import { GrowingUnderline } from '~/components/ui/growing-underline'
 
 const EXPERIENCES = [
   {
-    org: 'Weaverse.io',
-    url: 'https://weaverse.io',
-    logo: '/static/images/weaverse-logo.png',
-    start: 'Mar 2022',
+    org: 'Spiraledge',
+    url: 'https://spiraledge.com',
+    logo: '/static/images/spiraledge.png',
+    start: 'Nov 2024',
     end: 'Present',
-    title: 'CTO / Co.Founder / Software Engineer',
-    icon: 'briefcase',
-    event: 'career-weaverse',
-    details: () => {
-      return (
-        <ul className="[&>li]:my-2 [&>li]:pl-0">
-          <li>
-            Building a smart{' '}
-            <a target="_blank" rel="noopener noreferrer" href="https://weaverse.io/demo">
-              Shopify Hydrogen Theme Customizer
-            </a>{' '}
-            to help creators build their own high quality and high performance headless storefronts
-            easily.
-          </li>
-        </ul>
-      )
-    },
-  },
-  {
-    org: 'FoxEcom',
-    url: 'https://foxecom.com/',
-    logo: '/static/images/foxecom-logo.jpeg',
-    start: 'May 2021',
-    end: 'Feb 2022',
-    title: 'Senior Software Engineer',
+    title: 'Software Engineer',
     icon: 'man-technologist',
-    event: 'career-foxecom',
+    event: 'career-spiraledge',
     details: () => {
       return (
         <ul className="[&>li]:my-2 [&>li]:pl-0">
           <li>
-            Built{' '}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://themeforest.net/item/minimog-the-high-converting-shopify-theme/33380968"
-            >
-              Minimog
+            Developed microservices architectures for backend systems for{' '}
+            <a target="_blank" rel="noopener noreferrer" href="https://practyce.com">
+              PRACTYCE
             </a>{' '}
-            - a multipurpose Shopify Theme (top best selling templates on Envato Market)
+            , ensuring scalability, modularity, and efficient resource utilization
           </li>
           <li>
-            Built{' '}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://apps.shopify.com/foxecom-boost-sales"
-            >
-              Fox Kit Shopify App
-            </a>{' '}
-            - The upsells and boost conversion tool built to support Minimog theme
+            Built responsive interfaces with Angular, focusing on reusable components, API
+            integration, and performance optimization for a seamless user experience
           </li>
         </ul>
       )
     },
   },
   {
-    org: 'Coc Coc',
-    url: 'https://coccoc.com/en',
-    logo: '/static/images/coc-coc-logo.png',
-    start: 'May 2020',
-    end: 'Apr 2021',
-    title: 'Frontend Engineer',
-    icon: 'man-technologist',
-    event: 'career-coc-coc',
-    details: () => {
-      return (
-        <ul className="[&>li]:my-2 [&>li]:pl-0">
-          <li>
-            Working on the <strong>#1 web browser & search engine</strong> in{' '}
-            <strong>Viet Nam</strong> (30M+ users)
-          </li>
-          <li>
-            Built{' '}
-            <a target="_blank" rel="noopener noreferrer" href="https://coccoc.com/webhp">
-              Coc Coc's newsfeed
-            </a>
-          </li>
-          <li>Maintained and optimized new tab's widgets and performance</li>
-        </ul>
-      )
-    },
-  },
-  {
-    org: 'BraveBits',
-    url: 'https://bravebits.co/',
-    logo: '/static/images/bb-logo.png',
-    start: 'Aug 2018',
-    end: 'Apr 2020',
-    title: 'Fullstack Developer',
-    icon: 'man-technologist',
-    event: 'career-bravebits',
-    details: () => {
-      return (
-        <ul className="[&>li]:my-2 [&>li]:pl-0">
-          <li>Working on the #1 Page Builder app on Shopify app store</li>
-          <li>Built Pagefly's Analytics APIs</li>
-          <li>
-            Built{' '}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/sellersmith/slider-x"
-            >
-              Slider-x
-            </a>
-          </li>
-        </ul>
-      )
-    },
-  },
-  {
-    org: 'MindX - Technology School',
-    url: 'https://mindx.edu.vn/',
-    logo: '/static/images/mindx-logo.jpeg',
-    start: 'May 2017',
-    end: 'Jul 2018',
-    title: 'Instructor and Developer',
-    icon: 'man-technologist',
-    event: 'career-mindx',
-    details: () => {
-      return (
-        <ul className="[&>li]:my-2 [&>li]:pl-0">
-          <li>
-            Built{' '}
-            <a target="_blank" rel="noopener noreferrer" href="http://lok.vn/">
-              Love of Knowledge
-            </a>{' '}
-            (Front-end Developer)
-          </li>
-          <li>
-            Built{' '}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://hta218.github.io/get-a-room-api-docs/"
-            >
-              Room Finder APIs
-            </a>{' '}
-            (Back-end Developer)
-          </li>
-          <li>
-            Built{' '}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/hta218/Travel_Egypt"
-            >
-              Travel Egypt
-            </a>{' '}
-            - a picture puzzle game made by pygame (Python)
-          </li>
-          <li>Mentored Python fundamentals and Python web development for newbies</li>
-        </ul>
-      )
-    },
-  },
-  {
-    org: 'Hanoi University of Science and Technology',
-    url: 'https://www.hust.edu.vn/en/',
-    logo: '/static/images/hust-logo.png',
+    org: 'University of Information Technology',
+    url: 'https://www.uit.edu.vn/',
+    logo: '/static/images/uit-logo.jpg',
     start: 'Sep 2013',
     end: 'Feb 2019',
-    title: 'Student at SEEE (School of Electrical & Electronic Engineering)',
+    title: 'Student',
     icon: 'man-student',
-    event: 'career-hust',
+    event: 'career-uit',
     details: () => {
       return (
         <ul className="[&>li]:my-2 [&>li]:pl-0">
           <li>
-            Get a good degree at <strong>School of Electrical & Electronic Engineering</strong>
+            Honorable Mention, The 2023 <strong>ICPC Vietnam National Programming Contest</strong>
           </li>
           <li>
-            And yeah! My major subject was <strong>Electronics and Telecommunications</strong>, but
-            I couldn't find interest in that field. So I learned Software Engineering instead, and
-            became what I am today.
+            Active participant in the UIT ACM/ICPC programming community, focusing on competitive
+            coding challenges and team-based problem-solving exercises.
+          </li>
+          <li>
+            <strong>Member of the Technical Team</strong> at{' '}
+            <strong>The 2023 WebDev Hackathon | WebDev Adventure</strong>,{' '}
+            <strong>developed</strong> specific features for{' '}
+            <strong>adventure.webdevstudios.org</strong> to be used in an{' '}
+            <strong>onsite contest setting</strong>
+          </li>
+          <li>
+            Participated in multiple workshops and training sessions focused on the latest{' '}
+            <strong>web development technologies</strong> and <strong>best practices</strong>
           </li>
         </ul>
       )

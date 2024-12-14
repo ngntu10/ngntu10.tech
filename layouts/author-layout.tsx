@@ -34,11 +34,11 @@ export function AuthorLayout({ children }: Props) {
                 Hi there <Twemoji emoji="waving-hand" />
               </h2>
               <p>
-                I'm <strong>Tuan Anh Huynh</strong> (alias <strong>Leo</strong> at work), a software
-                engineer from <strong>Vietnam</strong>. I have a passion for all things{' '}
-                <strong>Javascript</strong>. I enjoy building eCommerce software and stuff related
-                to web dev. I work mainly with <strong>Typescript</strong>, <strong>React</strong>,{' '}
-                <strong>NodeJS</strong>, <strong>Remix</strong>, and <strong>TailwindCSS</strong>.
+                I'm <strong>Nguyen Tu Pham</strong>, a software engineer from{' '}
+                <strong>Vietnam</strong>. I work mainly with <strong>Java</strong>,{' '}
+                <strong>Spring Boot</strong>, <strong>React</strong>, <strong>NextJS</strong>,{' '}
+                <strong>NodeJS</strong>, <strong>NestJS</strong>, and{' '}
+                <strong>TypeScript/JavaScript</strong>.
               </p>
               <p>
                 This blog serves as a journal for documenting and sharing the insights and knowledge
@@ -53,10 +53,10 @@ export function AuthorLayout({ children }: Props) {
             <div>
               <div className="mb-[1em] mt-[2em] flex items-center justify-between [&>h2]:my-0">
                 <h2>My career</h2>
-                <Button as="a" href="/static/resume.pdf" target="_blank">
+                {/* <Button as="a" href="/static/resume.pdf" target="_blank">
                   <span>Resume</span>
                   <Twemoji emoji="page-facing-up" />
-                </Button>
+                </Button> */}
               </div>
               <CareerTimeline />
             </div>
