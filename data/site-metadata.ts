@@ -5,10 +5,12 @@ export const SITE_METADATA = {
   description:
     'A personal space on the cloud where I document my programming journey, sharing lessons, insights, and resources for fellow developers.',
   language: 'en-us',
+  codeForces: 'bumer1005',
+  leetcode: 'ngntu10',
   theme: 'system', // system, dark or light
   siteUrl: 'https://www.ngntu10.tech',
   siteRepo: 'https://github.com/ngntu10/ngntu10.tech',
-  siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.jpg`,
+  siteLogo: `${process.env.BASE_PATH || ''}/static/images/ngntu102.jpg`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.jpeg`,
   email: 'phamnguyentu04@gmail.com',
   github: 'https://github.com/ngntu10',

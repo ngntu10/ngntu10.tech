@@ -1,8 +1,12 @@
 import { SITE_METADATA } from '~/data/site-metadata'
 import { BriefcaseBusiness, Github, Linkedin, Mail, MapPin } from 'lucide-react'
+import { FaLinkedin } from 'react-icons/fa'
 import { Fragment } from 'react'
 import XIcon from '~/icons/x.svg'
 import { Twemoji } from '~/components/ui/twemoji'
+import { FaGithub, FaXTwitter } from 'react-icons/fa6'
+import { SiCodeforces } from 'react-icons/si'
+import { TbBrandLeetcode } from 'react-icons/tb'
 
 function getAccountHandle(url = '') {
   let lastPart = url.split('/').pop()
@@ -17,21 +21,35 @@ const SOCIALS = [
     platform: 'github',
     handle: getAccountHandle(SITE_METADATA.github),
     href: SITE_METADATA.github,
-    Icon: () => <Github size={20} strokeWidth={1.5} />,
+    Icon: () => <FaGithub size={18} />,
     umamiEvent: 'profile-card-github',
   },
   {
     platform: 'linkedin',
     handle: getAccountHandle(SITE_METADATA.linkedin),
     href: SITE_METADATA.linkedin,
-    Icon: () => <Linkedin size={20} strokeWidth={1.5} />,
+    Icon: () => <FaLinkedin size={18} />,
     umamiEvent: 'profile-card-linkedin',
+  },
+  {
+    platform: 'codeforces',
+    handle: getAccountHandle(SITE_METADATA.codeForces),
+    href: SITE_METADATA.codeForces,
+    Icon: () => <SiCodeforces size={18} />,
+    umamiEvent: 'profile-card-codeforces',
+  },
+  {
+    platform: 'leetcode',
+    handle: getAccountHandle(SITE_METADATA.leetcode),
+    href: SITE_METADATA.leetcode,
+    Icon: () => <TbBrandLeetcode size={18} />,
+    umamiEvent: 'profile-card-leetcode',
   },
   {
     platform: 'x',
     handle: getAccountHandle(SITE_METADATA.x),
     href: SITE_METADATA.x,
-    Icon: () => <XIcon className="h-4 w-4" fill="#fff" viewBox="0 0 1200 1227" />,
+    Icon: () => <FaXTwitter size={18} />,
     umamiEvent: 'profile-card-x',
   },
 ]
@@ -39,27 +57,29 @@ const SOCIALS = [
 export function ProfileCardInfo() {
   return (
     <div className="hidden py-4 md:block md:px-5">
-      <h3 className="text-xl font-semibold text-gray-800 dark:text-white">Tuan Anh (Leo) Huynh</h3>
-      <h5 className="py-2 text-gray-500 dark:text-gray-400">Learner | Builder</h5>
+      <h3 className="text-xl font-semibold text-gray-800 dark:text-white">
+        Nguyen Tu Pham (Bumer)
+      </h3>
+      <h5 className="py-2 text-gray-500 dark:text-gray-400">Software Engineer</h5>
       <div className="mb-2 mt-4 space-y-4">
         <div className="flex items-center text-gray-700 dark:text-gray-200">
           <BriefcaseBusiness strokeWidth={1.5} size={20} />
           <p className="flex items-center px-2">
-            CTO & Co-Founder @{' '}
+            Software Engineer @{' '}
             <a
               target="_blank"
-              href="https://weaverse.io"
+              href="https://spiraledge.com"
               rel="noreferrer"
-              className="underline-offset-4 hover:underline"
+              className="ml-1 underline-offset-4 hover:underline"
             >
-              Weaverse
+              Spiraledge
             </a>
           </p>
         </div>
         <div className="flex items-center text-gray-700 dark:text-gray-200">
           <MapPin strokeWidth={1.5} size={20} />
           <p className="px-2">
-            [::1]:443 - Ha Noi,
+            Ho Chi Minh,
             <span className="absolute ml-1 inline-flex pt-px">
               <Twemoji emoji="flag-vietnam" />
             </span>
@@ -71,7 +91,7 @@ export function ProfileCardInfo() {
             {SITE_METADATA.email}
           </a>
         </div>
-        <div className="flex items-center gap-2.5 text-gray-700 dark:text-gray-200">
+        <div className="flex flex-wrap items-center gap-2.5 text-gray-700 dark:text-gray-200">
           {SOCIALS.map(({ platform, handle, href, Icon, umamiEvent }, idx) => (
             <Fragment key={platform}>
               <a
